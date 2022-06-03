@@ -213,12 +213,12 @@
         </svg>
 
         <script>
-            const tween = KUTE.anyFromTo(
+            const tween = KUTE.FromTo(
                 '#blob1',
                 { path: '#blob1' },
                 { path: '#blob2' },
                 { path: '#blob3' },
-                { repeat: 999, duration: 3000, yoyo: false }
+                { repeat: 999, duration: 3000, yoyo: true }
             ).start(tween);
         </script>
     </section>
