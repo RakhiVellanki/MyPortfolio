@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
 
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <style>
         h1 {
             font-size: 4rem;
@@ -161,16 +161,16 @@
         <div class="blob-content">
             <h1>FAQ about Me!</h1>
         <h3>Favourite Subject?</h3>
-        <li>I'm required to love Science and Math. (Language too!)</li>
-        <li>I also really enjoy Physical Education and the Arts!</li>
+        <li class="widget">I'm required to love Science and Math. (Language too!)</li>
+        <li class="widget">I also really enjoy Physical Education and the Arts!</li>
         <h3>Clubs?</h3>
-        <li>Ahaha... I'm not in any clubs... But I do really enjoy Volleyball! 
+        <li class="widget">Ahaha... I'm not in any clubs... But I do really enjoy Volleyball! 
             (Totally not me boasting) I even have a gold medal ;).</li>
-        <li>I do plan to join a bunch of clubs in Highschool though, and grade 8 if offered.</li>
+        <li class="widget">I do plan to join a bunch of clubs in Highschool though, and grade 8 if offered.</li>
         <h3>What's your favourite month?</h3>
-        <li>The spookiest spooky month. Esteemed October!</li>
+        <li class="widget">The spookiest spooky month. Esteemed October!</li>
         <h3>What's your music taste?</h3>
-        <li>Literally ANYTHING. Honestly, I just obsess over a song, then play it on repeat. 
+        <li class="widget">Literally ANYTHING. Honestly, I just obsess over a song, then play it on repeat. 
             This changes bi-weekly(10-14 business days).</li>
         </div>
 
@@ -179,14 +179,16 @@
     <section class="spacer dark">
         <h1>More about me</h1>
         <p>My name is Rakhi, I'm 13. I live in Brampton, Ontario. I'm a beginner at coding, but I hope to get better!</p>
-        <em>Contact me at: rakhi.b.vellanki@gmail.com or imfineareu@gmail.com</em>
-        <em>Find me at: Instagram - @yep.smile_</em>
+        
     </section>
     <div class="spacer dark">
-
+        <em>Contact me at: rakhi.b.vellanki@gmail.com or imfineareu@gmail.com</em>
+        <em>Find me at: Instagram - @yep.smile_</em>
     </div>
     <script>
-        Scroll.Reveal().reveal('.layer1', '.layer2')
+        Scroll.Reveal().reveal('.layer1')
+        Scroll.Reveal().reveal('.layer2',{delay: 500})
+        Scroll.Reveal().reveal('.widget',{delay: 3000})
     </script>
 </body>
 
