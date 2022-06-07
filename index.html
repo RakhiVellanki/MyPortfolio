@@ -195,7 +195,7 @@
   height: 100%;
   top: 7px;
   left: 7px;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 .button1:hover:after {
@@ -232,7 +232,7 @@
         <h3>What's your music taste?</h3>
         <li class="widget">Literally ANYTHING. Honestly, I just obsess over a song, then play it on repeat. 
             This changes bi-weekly(10-14 business days).</li>
-        <li>Check out my Current favourite song on spotify here>>> <a href="https://open.spotify.com/track/5LOiuvbH62YGtnwe6Ltt4T?si=8f413418ad69470b" class="button1">Mirror, by Kendrick Lamar</a><div class="alert alert-success" role="alert">
+        <li>Check out my Current favourite song on spotify here>>> <button onclick="spotify()" class="button1">Mirror, by Kendrick Lamar</button><div class="alert alert-success" role="alert">
           <h4 class="alert-heading"></h4>
           <p></p>
           <p class="mb-0"></p>
@@ -252,12 +252,9 @@
         
     </section>
        <script>
-window.onscroll = function() {kys()};
-function kys() {
-  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-    document.getElementById("spacer").className = "slideUp";
-  }
-}
+        function spotify(){
+            location.replace("https://open.spotify.com/track/5LOiuvbH62YGtnwe6Ltt4T?si=6d465b903ea2469f")
+        }
 </script>
 </body>
 
