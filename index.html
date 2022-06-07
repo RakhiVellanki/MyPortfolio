@@ -31,34 +31,29 @@
         }
 
         section {
+       
+        section {
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 400px;
-            padding-top: 100px;
+            padding-top: 0px;
         }
-
         .blue {
             background: #3c31dd;
         }
-
         .red {
             background: #dd3f31;
-            text-align: center;
         }
-
         .pink {
             background: #ff0066;
             overflow: hidden;
         }
-
         .dark {
             background: #0f0f10;
         }
-
         /* Curved bg with plain CSS */
-
         .curve {
             position: absolute;
             height: 250px;
@@ -66,7 +61,6 @@
             bottom: 0;
             text-align: center;
         }
-
         .curve::before {
             content: '';
             display: block;
@@ -77,7 +71,6 @@
             transform: translate(85%, 60%);
             background-color: hsl(216, 21%, 16%);
         }
-
         .curve::after {
             content: '';
             display: block;
@@ -89,9 +82,7 @@
             transform: translate(-4%, 40%);
             z-index: -1;
         }
-
         /* Bubble bg with plain CSS */
-
         .bubble::after {
             content: '';
             border-top-left-radius: 50% 100%;
@@ -103,9 +94,7 @@
             background-color: #0f0f10;
             height: 85%;
         }
-
         /* Curved bg with SVG via https://www.shapedivider.app/ */
-
         .wave {
             position: absolute;
             top: 0;
@@ -114,20 +103,16 @@
             overflow: hidden;
             line-height: 0;
         }
-
         .wave svg {
             position: relative;
             display: block;
             width: calc(103% + 1.3px);
             height: 262px;
         }
-
         .wave .shape-fill {
             fill: hsl(240, 3%, 6%);
         }
-
         /* SVG background image via https://haikei.app/ */
-
         .spacer {
             aspect-ratio: 960/300;
             width: 100%;
@@ -135,143 +120,63 @@
             background-position: center;
             background-size: cover;
         }
-
         .layer1 {
-            background-image: url('./Svg\ files/layer1');
+            background-image: url('./layer1.svg');
         }
-
         .layer2 {
-            background-image: url('./Svg\ files/layer2');
+            background-image: url('./layer2.svg');
         }
-
         .flip {
             transform: rotate(180deg);
         }
-
         /* Blobs SVG background image via https://haikei.app/ */
-
         .blob-motion {
             position: absolute;
             transform: translateY(-20%);
             z-index: 0;
         }
-
         .blob-content {
             z-index: 1;
         }
-
-        .blobs {
-            width: 100%;
-            background: url('./blobs.svg') no-repeat bottom / cover;
-        }
         .blob1 {
             width: 100%;
-            background-image: url('./Svg\ files/blob1');
+            background: url('./blob1.svg');
         }
-        .blob2{
+        .blob2 {
             width: 100%;
-            background-image: url('./Svg\ files/blob2');
+            background: url('./blob2.svg');
         }
-        .blob3{
+        .blob3 {
             width: 100%;
-            background-image: url('./Svg\ files/blob3');
+            background: url('./blob3.svg');
         }
     </style>
 </head>
-
 <body>
-    <section class="blue">
-        <h1>Hello!</h1>
-        <p>Hi, my name is Rakhi! And I'm an aspiring developer!</p>
-        <div class="curve"></div>
-    </section>
-
-    <section>
-        <h1>FAQ about Me!</h1>
-        <h4>Favourite Subject?</h4>
-        <li>I'm required to love Science and Math. (Language too!)</li>
-        <li>I also really enjoy Physical Education and the Arts!</li>
-        <h4>Clubs?</h4>
-        <li>Ahaha... I'm not in any clubs... But I do really enjoy Volleyball! (Totally not me boasting) I even have a gold medal ;).</li>
-        <li>I do plan to join a bunch of clubs in Highschool though, and grade 8 if offered.</li>
-        <h4></h4>
-    </section>
-
-    <section class="bubble">
-        <h2>How old are you?</h2>
-        <p>I'm 13, why is this even here????</p>
-    </section>
-
-    <section class="dark">
-        <h2>Favourite month?</h2>
-        <p>Of course it's the esteemed spooky month of October!</p>
-    </section>
-
-    <section class="red">
-        <h2>What's your music taste?</h2>
-        <p>Literally ANYTHING. Honestly, I just obsess over a song, then play it on repeat. This changes bi-weekly(10-14 business days).</p>
-
-        <div class="wave">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
-    </section>
-
     <div class="spacer layer1"></div>
-
     <section>
-        <h1>~Athons~</h1>
-        <li>I missed out on the opportunity to go to Jamhacks!</li>
+        <h1>Hey! I'm Rakhi</h1>
+        <p>I'm an aspiring developer with time on my hands!</p>
     </section>
-
     <div class="spacer layer2 flip"></div>
-
     <section class="pink">
         <div class="blob-content">
-            <h1>Nice Curves!</h1>
+            <h1>~Athons~ and Clubs</h1>
             <p>A website is like a road. The more curves it has the more interesting it is.</p>
+            <h3>Hackathons</h3>
+            <li>I have not attended any Hackathons yet. BUT I WILL IN GR 8</li>
+            <h3>Learnathons</h3>
+            <li>I will attend a Learnathon by Kurius. June 25 - July 26</li>
+            <h3>Clubs</h3>
+            <li>I love volleyball and basketball!</li>
         </div>
 
         <svg class="blob-motion" id="visual" viewBox="0 0 960 540" width="960" height="540"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-            <g transform="translate(406.7029759433674 332.10725236345144)">
-                <path id="blob1"
-                    d="M187.4 -178.8C233.4 -141.4 254.7 -70.7 244.9 -9.8C235.1 51.1 194.3 102.3 148.3 127.3C102.3 152.3 51.1 151.2 1.6 149.5C-47.8 147.9 -95.7 145.7 -123.7 120.7C-151.7 95.7 -159.8 47.8 -160.6 -0.7C-161.3 -49.3 -154.5 -98.5 -126.5 -135.9C-98.5 -173.2 -49.3 -198.6 10.7 -209.3C70.7 -220 141.4 -216.1 187.4 -178.8"
-                    fill="#BB004B"></path>
-            </g>
-            <g transform="translate(438.2663397944938 307.342951877767)" style="visibility:hidden">
-                <path id="blob2"
-                    d="M114.7 -113.5C158.7 -70.7 211.4 -35.4 219.6 8.2C227.9 51.9 191.7 103.7 147.7 137.7C103.7 171.7 51.9 187.9 -9.4 197.3C-70.7 206.7 -141.4 209.4 -173.4 175.4C-205.4 141.4 -198.7 70.7 -190.7 8C-182.7 -54.7 -173.4 -109.4 -141.4 -152.2C-109.4 -195 -54.7 -226 -9.7 -216.4C35.4 -206.7 70.7 -156.4 114.7 -113.5"
-                    fill="#BB004B"></path>
-            </g>
-            <g transform="translate(459.75681834994623 331.793742025461)">
-                <path
-                    id="blob3"
-                    d="M139.1 -164.1C164.1 -114.1 157 -57 153 -4C149 49 148.1 98.1 123.1 132.9C98.1 167.7 49 188.4 4.6 183.8C-39.8 179.2 -79.7 149.3 -114.3 114.5C-149 79.7 -178.5 39.8 -176.5 2C-174.5 -35.8 -141 -71.7 -106.3 -121.7C-71.7 -171.7 -35.8 -235.8 10.6 -246.4C57 -257 114.1 -214.1 139.1 -164.1"
-                    fill="#BB004B"></path>
-            </g>
-        </svg>
-
-        <script>
-            const tween = KUTE.fromTo(
-                '#blob1',
-                { path: '#blob1' },
-                { path: '#blob2' },
-                { path: '#blob3' },
-                { repeat: 999, duration: 3000, yoyo: true }
-            ).start();
-        </script>
-    </section>
-
     <div class="spacer layer2"></div>
 
     <section class="blobs">
-        <h1>Nice Curves!</h1>
-        <p>A website is like a road. The more curves it has the more interesting it is.</p>
+        <h1>More about me</h1>
+        <p>My name is Rakhi, I'm 13. I live in Brampton, Ontario. I'm a beginner at coding, but I hope to get better!</p>
     </section>
 </body>
 
