@@ -151,6 +151,23 @@
         .padder {
             padding-top: 60px;
         }
+        .slideUp {
+    animation-name: slideUp;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-duration: 1s;
+    visibility: visible;
+}   
+    @keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
     </style>
 </head>
 <body>
@@ -188,9 +205,15 @@
         <em>Contact me at: rakhi.b.vellanki@gmail.com or imfineareu@gmail.com</em>
         <em>Find me at: Instagram - @yep.smile_</em>
     </section>
-    <script>
-        Scroll.Reveal().reveal('.widget',{delay: 3000})
-    </script>
+       <script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 350) {
+    document.getElementById("spacer").className = "slideUp";
+  }
+}
+</script>
 </body>
 
 </html>
